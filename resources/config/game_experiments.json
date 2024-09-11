@@ -1,0 +1,74 @@
+[
+    {
+      "code": 1000,
+      "type": 1,
+      "config_id": "6317",
+      "period_id": "6317_489",
+      "version": "2",
+      "configs": {
+        "forget_password": "true"
+      },
+      "sceneWhiteList": false,
+      "experimentWhiteList": false
+    },
+    {
+      "code": 1000,
+      "type": 2,
+      "config_id": "87",
+      "period_id": "6317_489",
+      "version": "2",
+      "configs": {
+        "forget_password": "true"
+      },
+      "sceneWhiteList": false,
+      "experimentWhiteList": false
+    },
+    {
+      "code": 1000,
+      "type": 1,
+      "config_id": "6260",
+      "period_id": "6260_689",
+      "version": "2",
+      "configs": {
+        "account_list": "true"
+      },
+      "sceneWhiteList": false,
+      "experimentWhiteList": false
+    },
+    {
+      "code": 1000,
+      "type": 2,
+      "config_id": "55",
+      "period_id": "6260_689",
+      "version": "2",
+      "configs": {
+        "account_list": "true"
+      },
+      "sceneWhiteList": false,
+      "experimentWhiteList": false
+    },
+	    {
+      "code": 1000,
+      "type": 1,
+      "config_id": "6230",
+      "period_id": "6230_387",
+      "version": "2",
+      "configs": {
+        "register_page": "true"
+      },
+      "sceneWhiteList": false,
+      "experimentWhiteList": false
+    },
+    {
+      "code": 1000,
+      "type": 2,
+      "config_id": "40",
+      "period_id": "6230_387",
+      "version": "2",
+      "configs": {
+        "register_page": "true"
+      },
+      "sceneWhiteList": false,
+      "experimentWhiteList": false
+    }
+]

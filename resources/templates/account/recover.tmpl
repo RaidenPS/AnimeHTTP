@@ -1,0 +1,46 @@
+<#include "./base/base.tmpl">
+<body class="is-hoyoverse">
+  <div id="root">
+    <div class="mhy-register mhy-single-page-container-content">
+      <div class="register-form-container">
+        <div class="register-header">
+          <div class="tab-item item-active"> ${header} </div>
+        </div>
+        <form id="registerForm" class="mhy-form form-content">
+          <div class="account-sea-input mhy-form-input input-item" value="">
+            <input type="username" placeholder="${username_msg}" class="input" id="username" name="username" minlength="2" required>
+          </div>
+          <div class="account-sea-input mhy-form-input input-item" value="">
+            <input type="email" placeholder="${email_msg}" class="input" id="email" name="email" required>
+          </div>
+          <div class="mhy-button login-btn is-block">
+            <button type="submit" class="default-btn lg-btn"> ${recover_btn} </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+    <script>
+        $(document).ready(function() {
+            $('#registerForm').on('submit', function(event) {
+                event.preventDefault();
+				
+                var formData = {
+                    username: $('#username').val(),
+					email: $('#email').val()
+                };
+
+                $.ajax({
+					url: '${recover_api}',
+                    type: 'POST',
+                    data: formData,
+					success: function(response) {
+						document.head.innerHTML = "";
+						document.body.innerHTML = JSON.stringify(response);
+					}
+                });
+            });
+        });
+    </script>
+</body>
+<layout/>

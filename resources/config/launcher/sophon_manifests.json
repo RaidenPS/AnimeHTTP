@@ -1,0 +1,187 @@
+[
+    {
+        "category_id": "10016",
+        "category_name": "\u6e38\u620f\u8d44\u6e90-\u5916\u7f51",
+        "manifest": {
+            "id": "manifest_a840226e3d67bc2e_8553accd71b3242c98b3cbc0589825cc",
+            "checksum": "8553accd71b3242c98b3cbc0589825cc",
+            "compressed_size": "3574094",
+            "uncompressed_size": "6925496"
+        },
+        "chunk_download": {
+            "encryption": 0,
+            "password": "",
+            "compression": 1,
+            "url_prefix": "https://autopatchhk.yuanshen.com/client_app/sophon/chunks/cxhpq4g4rgg0/Xjsq5P6brXRg",
+            "url_suffix": ""
+        },
+        "manifest_download": {
+            "encryption": 0,
+            "password": "",
+            "compression": 1,
+            "url_prefix": "https://autopatchhk.yuanshen.com/client_app/sophon/manifests/cxhpq4g4rgg0/Xjsq5P6brXRg",
+            "url_suffix": ""
+        },
+        "matching_field": "game",
+        "stats": {
+            "compressed_size": "68698038562",
+            "uncompressed_size": "70484493496",
+            "file_count": "1867",
+            "chunk_count": "60826"
+        },
+        "deduplicated_stats": {
+            "compressed_size": "68614159069",
+            "uncompressed_size": "70355530634",
+            "file_count": "1867",
+            "chunk_count": "60722"
+        }
+    },
+    {
+        "category_id": "10017",
+        "category_name": "\u8bed\u97f3\u5305-\u4e2d\u6587-\u5916\u7f51",
+        "manifest": {
+            "id": "manifest_12db83676041094b_79b0c9531869238d18d1aed942f4e8df",
+            "checksum": "79b0c9531869238d18d1aed942f4e8df",
+            "compressed_size": "807783",
+            "uncompressed_size": "1545496"
+        },
+        "chunk_download": {
+            "encryption": 0,
+            "password": "",
+            "compression": 1,
+            "url_prefix": "https://autopatchhk.yuanshen.com/client_app/sophon/chunks/cxhpq4g4rgg0/Xjsq5P6brXRg",
+            "url_suffix": ""
+        },
+        "manifest_download": {
+            "encryption": 0,
+            "password": "",
+            "compression": 1,
+            "url_prefix": "https://autopatchhk.yuanshen.com/client_app/sophon/manifests/cxhpq4g4rgg0/Xjsq5P6brXRg",
+            "url_suffix": ""
+        },
+        "matching_field": "zh-cn",
+        "stats": {
+            "compressed_size": "13796430275",
+            "uncompressed_size": "15865438940",
+            "file_count": "147",
+            "chunk_count": "13849"
+        },
+        "deduplicated_stats": {
+            "compressed_size": "13796155704",
+            "uncompressed_size": "15865118516",
+            "file_count": "147",
+            "chunk_count": "13848"
+        }
+    },
+    {
+        "category_id": "10018",
+        "category_name": "\u8bed\u97f3\u5305-\u82f1\u6587-\u5916\u7f51",
+        "manifest": {
+            "id": "manifest_2c66b4c53fce8d04_1ef9f276267d3bf6cb9dd5d90add28cd",
+            "checksum": "1ef9f276267d3bf6cb9dd5d90add28cd",
+            "compressed_size": "915991",
+            "uncompressed_size": "1746491"
+        },
+        "chunk_download": {
+            "encryption": 0,
+            "password": "",
+            "compression": 1,
+            "url_prefix": "https://autopatchhk.yuanshen.com/client_app/sophon/chunks/cxhpq4g4rgg0/Xjsq5P6brXRg",
+            "url_suffix": ""
+        },
+        "manifest_download": {
+            "encryption": 0,
+            "password": "",
+            "compression": 1,
+            "url_prefix": "https://autopatchhk.yuanshen.com/client_app/sophon/manifests/cxhpq4g4rgg0/Xjsq5P6brXRg",
+            "url_suffix": ""
+        },
+        "matching_field": "en-us",
+        "stats": {
+            "compressed_size": "17055944128",
+            "uncompressed_size": "18503057980",
+            "file_count": "147",
+            "chunk_count": "15659"
+        },
+        "deduplicated_stats": {
+            "compressed_size": "17055110811",
+            "uncompressed_size": "18502076056",
+            "file_count": "147",
+            "chunk_count": "15658"
+        }
+    },
+    {
+        "category_id": "10020",
+        "category_name": "\u8bed\u97f3\u5305-\u65e5\u6587-\u5916\u7f51",
+        "manifest": {
+            "id": "manifest_878ea417c18d7f71_ddf2ae839f3c1feee40289ebe5050526",
+            "checksum": "ddf2ae839f3c1feee40289ebe5050526",
+            "compressed_size": "1008637",
+            "uncompressed_size": "1931191"
+        },
+        "chunk_download": {
+            "encryption": 0,
+            "password": "",
+            "compression": 1,
+            "url_prefix": "https://autopatchhk.yuanshen.com/client_app/sophon/chunks/cxhpq4g4rgg0/Xjsq5P6brXRg",
+            "url_suffix": ""
+        },
+        "manifest_download": {
+            "encryption": 0,
+            "password": "",
+            "compression": 1,
+            "url_prefix": "https://autopatchhk.yuanshen.com/client_app/sophon/manifests/cxhpq4g4rgg0/Xjsq5P6brXRg",
+            "url_suffix": ""
+        },
+        "matching_field": "ja-jp",
+        "stats": {
+            "compressed_size": "16219799152",
+            "uncompressed_size": "20808547148",
+            "file_count": "147",
+            "chunk_count": "17332"
+        },
+        "deduplicated_stats": {
+            "compressed_size": "16219799152",
+            "uncompressed_size": "20808547148",
+            "file_count": "147",
+            "chunk_count": "17332"
+        }
+    },
+    {
+        "category_id": "10019",
+        "category_name": "\u8bed\u97f3\u5305-\u97e9\u6587-\u5916\u7f51",
+        "manifest": {
+            "id": "manifest_574e527782907430_76ad89c6a303b9ad1a4289a1738cd104",
+            "checksum": "76ad89c6a303b9ad1a4289a1738cd104",
+            "compressed_size": "760538",
+            "uncompressed_size": "1453205"
+        },
+        "chunk_download": {
+            "encryption": 0,
+            "password": "",
+            "compression": 1,
+            "url_prefix": "https://autopatchhk.yuanshen.com/client_app/sophon/chunks/cxhpq4g4rgg0/Xjsq5P6brXRg",
+            "url_suffix": ""
+        },
+        "manifest_download": {
+            "encryption": 0,
+            "password": "",
+            "compression": 1,
+            "url_prefix": "https://autopatchhk.yuanshen.com/client_app/sophon/manifests/cxhpq4g4rgg0/Xjsq5P6brXRg",
+            "url_suffix": ""
+        },
+        "matching_field": "ko-kr",
+        "stats": {
+            "compressed_size": "13344788087",
+            "uncompressed_size": "15590568423",
+            "file_count": "147",
+            "chunk_count": "13014"
+        },
+        "deduplicated_stats": {
+            "compressed_size": "13344788087",
+            "uncompressed_size": "15590568423",
+            "file_count": "147",
+            "chunk_count": "13014"
+        }
+    }
+]

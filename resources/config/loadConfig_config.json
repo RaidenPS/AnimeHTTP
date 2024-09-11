@@ -1,0 +1,41 @@
+{
+    "identity": "I_IDENTITY",
+    "guest": true,
+    "ignore_versions": "",
+    "scene": "S_NORMAL",
+    "disable_regist": false,
+    "enable_email_captcha": false,
+    "thirdparty": [
+      "tw",
+      "ap",
+      "gc",
+      "fb",
+	  "tp"
+    ],
+    "disable_mmt": false,
+    "server_guest": false,
+    "thirdparty_ignore": {
+
+    },
+    "enable_ps_bind_account": false,
+    "thirdparty_login_configs": {
+      "fb": {
+        "token_type": "TK_GAME_TOKEN",
+        "game_token_expires_in": 2592000
+      }
+    },
+    "initialize_firebase": false,
+    "bbs_auth_login": false,
+    "bbs_auth_login_ignore": [],
+    "fetch_instance_id": false,
+    "enable_flash_login": false,
+    "enable_logo_18": false,
+    "logo_height": "0",
+    "logo_width": "0",
+    "enable_cx_bind_account": false,
+    "firebase_blacklist_devices_switch": false,
+    "firebase_blacklist_devices_version": 0,
+    "hoyolab_auth_login": true,
+    "hoyolab_auth_login_ignore": [],
+    "hoyoplay_auth_login": false
+}

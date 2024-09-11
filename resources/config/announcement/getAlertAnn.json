@@ -1,0 +1,6 @@
+{
+    "alert": false,
+    "alert_id": 0,
+    "remind": true,
+    "extra_remind": false
+}

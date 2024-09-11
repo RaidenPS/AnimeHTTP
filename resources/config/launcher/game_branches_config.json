@@ -1,0 +1,15 @@
+[
+    {
+        "game": {
+            "id": "gopR6Cufr3",
+            "biz": "hk4e_global"
+        },
+        "main": {
+            "package_id": "ScSYQBFhu9",
+            "branch": "main",
+            "password": "bDL4JUHL625x",
+            "tag": "5.0.0"
+        },
+        "pre_download": null
+    }
+]

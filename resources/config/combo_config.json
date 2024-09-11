@@ -1,0 +1,75 @@
+{
+	"1": {
+      "disable_email_bind_skip": "false",
+      "enable_telemetry_data_upload": "true",
+      "email_bind_remind": "true",
+      "disable_try_verify": "false",
+      "appsflyer_config": "{\n  \"enabled\": true\n}",
+      "h5log_config": " { \"enable\": 1, \"level\": \"Debug\" } ",
+      "enable_attribution": "true",
+      "network_report_config": "{\n\t\"enable\": 1,\n\t\"status_codes\": [200],\n\t\"url_paths\": [\"combo/postman/device/setAlias\"]\n}",
+      "h5log_filter_config": "{\n\t\"function\": {\n\t\t\"event_name\": [\"report_set_info\", \"notice_close_notice\", \"apm_crash_add_custom_key_value\", \"hasScanFunc\", \"push_clear_local_notification\", \"push_add_local_notification\", \"launch_del_notification\", \"info_get_device_id\", \"getDeviceId\"]\n\t}\n}",
+      "email_bind_remind_interval": "7",
+      "enable_telemetry_h5log": "true",
+      "new_register_page_enable": "true"
+    },
+	"2": {
+      "enable_bind_google_sdk_order": "false",
+      "disable_email_bind_skip": "false",
+      "email_bind_remind": "true",
+      "list_price_tierv2_enable": "false\n",
+      "appsflyer_config": "{\n  \"enabled\": true\n}",
+      "new_register_page_enable": "true",
+      "report_black_list": "{\"key\":[\"download_update_progress\"]}",
+      "enable_attribution": "true",
+      "h5log_config": " { \"enable\": 1, \"level\": \"Debug\" } ",
+      "enable_apm_sdk": "false",
+      "email_bind_remind_interval": "7",
+      " network_report_config": "{\n        \"enable\": 1,\n        \"status_codes\": [],\n        \"url_paths\": [\"/dataUpload\",\"combo/postman/device/setAlias\"]\n}",
+      "h5log_filter_config": "{\n\t\"function\": {\n\t\t\"event_name\": [\"report_set_info\", \"notice_close_notice\", \"info_get_channel_id\", \"apm_crash_add_custom_key_value\", \"push_clear_local_notification\", \"launch_del_notification\", \"info_get_sub_channel_id\", \"login_set_server_id\"]\n\t}\n}"
+    },
+	"3": {
+      "kibana_pc_config": "{ \"enable\": 1, \"level\": \"Info\",\"modules\": [\"download\"]",
+      "new_forgotpwd_page_enable": "true",
+      "email_bind_remind_interval": "7",
+      "email_bind_remind": "true",
+      "webview_apm_config": "{ \"crash_capture_enable\": false }",
+      "pay_payco_centered_host": "bill.payco.com",
+      "h5log_filter_config": "{\n\t\"function\": {\n\t\t\"event_name\": [\"info_get_cps\", \"notice_close_notice\", \"info_get_uapc\", \"report_set_info\", \"info_get_channel_id\", \"info_get_sub_channel_id\"]\n\t}\n}",
+      "disable_email_bind_skip": "false",
+      "telemetry_config": "{\n \"dataupload_enable\": 1,\n}",
+      "list_price_tierv2_enable": "false",
+      "account_list_page_enable": "true",
+      "network_report_config": "{ \"enable\": 1, \"status_codes\": [206], \"url_paths\": [\"dataUpload\"] }",
+      "new_register_page_enable": "true",
+      "kcp_enable": "false",
+      "enable_web_dpi": "true",
+      "webview_rendermethod_config": "{ \"useLegacy\": true }"
+    },
+	"6": {
+      "enable_apm_sdk": "false"
+    },
+	"8": {
+      "email_bind_remind_interval": "7",
+      "email_bind_remind": "true",
+      "isGooglePayV2": "{\"whiteList\": [ { \"thousandRate\": 1}]}",
+      "enable_attribution": "true",
+      "appsflyer_config": "{\n  \"enabled\": true\n}",
+      "enable_google_cancel_callback": "true",
+      "h5log_filter_config": "{\n\t\"function\": {\n\t\t\"event_name\": [\"report_set_info\", \"notice_close_notice\", \"info_get_channel_id\", \"apm_crash_add_custom_key_value\", \"push_clear_local_notification\", \"launch_del_notification\", \"info_get_sub_channel_id\", \"login_set_server_id\"]\n\t}\n}",
+      "disable_email_bind_skip": "false"
+    },
+	"9": {
+      "enable_telemetry_h5log": "true",
+      "enable_telemetry_data_upload": "true"
+    },
+	"10": {
+      "email_bind_remind": "true",
+      "enable_telemetry_h5log": "true",
+      "enable_telemetry_data_upload": "true",
+      "enable_attribution": "true",
+      "appsflyer_config": "{\n  \"enabled\": true\n}",
+      "email_bind_remind_interval": "7",
+      "disable_email_bind_skip": "false"
+    }
+}

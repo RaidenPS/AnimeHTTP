@@ -1,0 +1,293 @@
+{
+    "game": {
+        "id": "gopR6Cufr3",
+        "biz": "hk4e_global"
+    },
+    "language": "en-us",
+    "banners": [
+        {
+            "id": "PISbbX670D",
+            "image": {
+                "url": "https://fastcdn.hoyoverse.com/static-resource-v2/2024/08/28/62fc500b17ff6783d230afb40ecea577_6392316641727119124.png",
+                "link": "https://www.hoyolab.com/article_pre/16237?lang=en-us&utm_source=launcher&utm_medium=banner&utm_id=2"
+            }
+        },
+        {
+            "id": "3LKW35K0Or",
+            "image": {
+                "url": "https://fastcdn.hoyoverse.com/static-resource-v2/2024/08/28/7cd26f6522355c8b8d3be31b8191d745_4481998980083171881.jpg",
+                "link": "https://hoyo.link/b5WkFJAL"
+            }
+        },
+        {
+            "id": "ZahxWVyKcc",
+            "image": {
+                "url": "https://fastcdn.hoyoverse.com/static-resource-v2/2024/08/27/0857102ad3d6153257686eb52382f06b_6490749401849101878.jpg",
+                "link": "https://www.hoyolab.com/article_pre/16291?lang=en-us&utm_source=launcher&utm_medium=banner&utm_id=2"
+            }
+        },
+        {
+            "id": "FZv3VoSlE1",
+            "image": {
+                "url": "https://fastcdn.hoyoverse.com/static-resource-v2/2024/08/27/b5edc68cf11d1304c180fb2500443fdb_246766409694008030.jpg",
+                "link": "https://hoyo.link/6P0kFDAL"
+            }
+        },
+        {
+            "id": "1x9D1ZJp9a",
+            "image": {
+                "url": "https://fastcdn.hoyoverse.com/static-resource-v2/2024/08/27/656cb396475fa54177e0aeb84b951968_4044581478926603893.jpg",
+                "link": "https://hoyo.link/8fZkFBAL"
+            }
+        },
+        {
+            "id": "d8nmAEiUaU",
+            "image": {
+                "url": "https://fastcdn.hoyoverse.com/static-resource-v2/2024/08/26/6d54e0ba23466909919d7daf8f1fd6b6_4039317391063050373.jpg",
+                "link": "https://www.hoyolab.com/article_pre/18014398241030240"
+            }
+        },
+        {
+            "id": "L0kJnakZ9X",
+            "image": {
+                "url": "https://fastcdn.hoyoverse.com/static-resource-v2/2024/08/26/29bd8737dddeec0f9f149160b7d4fdca_5031741389967914744.jpg",
+                "link": "https://hoyo.link/fsYkFBAL"
+            }
+        },
+        {
+            "id": "c75gOErqGA",
+            "image": {
+                "url": "https://fastcdn.hoyoverse.com/static-resource-v2/2024/08/26/fa5ab91893c67c9f9e04f7d253713a55_2549756907259081517.jpg",
+                "link": "https://hoyo.link/c4YkFBAL"
+            }
+        },
+        {
+            "id": "ZKrHJ7ZLOK",
+            "image": {
+                "url": "https://fastcdn.hoyoverse.com/static-resource-v2/2024/08/26/9f59626820ca60b2eb786d67a025921b_8065096509403682099.jpg",
+                "link": "https://hoyo.link/c4YkFBAL"
+            }
+        },
+        {
+            "id": "25sqCdNnNM",
+            "image": {
+                "url": "https://fastcdn.hoyoverse.com/static-resource-v2/2024/08/26/f74418fd5ace201a200d6dac91df2d41_746914977208475068.jpg",
+                "link": "https://hoyo.link/c4YkFBAL"
+            }
+        },
+        {
+            "id": "4eQxw7AEWo",
+            "image": {
+                "url": "https://fastcdn.hoyoverse.com/static-resource-v2/2024/08/26/2f0bd4c7cd19629618feeb492c245c02_8740331570056221952.jpg",
+                "link": "https://hoyo.link/d9YkFBAL"
+            }
+        },
+        {
+            "id": "Mc4nyHWcjJ",
+            "image": {
+                "url": "https://fastcdn.hoyoverse.com/static-resource-v2/2024/08/22/5f574b9d7de1ca8cef82111a0ff009ac_5130239261276470755.jpg",
+                "link": "https://hoyo.link/4mVkFBAL"
+            }
+        },
+        {
+            "id": "pQyJbmTUzG",
+            "image": {
+                "url": "https://fastcdn.hoyoverse.com/static-resource-v2/2024/08/16/aed431114c7b0a263884ea7723371ef9_6093621808193540471.jpg",
+                "link": "https://hoyo.link/1dRkFBAL"
+            }
+        }
+    ],
+    "posts": [
+        {
+            "id": "qNrBz5Y3Ru",
+            "type": "POST_TYPE_ACTIVITY",
+            "title": "Mualani's Lucky Day",
+            "link": "https://hoyo.link/1I1kFDAL",
+            "date": "08/28"
+        },
+        {
+            "id": "PuzWSub6gh",
+            "type": "POST_TYPE_ACTIVITY",
+            "title": "\"Flowers Resplendent on the Sun-Scorched Sojourn\" Version 5.0 Submission Contest",
+            "link": "https://hoyo.link/ax0kFBAL",
+            "date": "08/28"
+        },
+        {
+            "id": "7NVt7JZWFQ",
+            "type": "POST_TYPE_ANNOUNCE",
+            "title": "\"Flowers Resplendent on the Sun-Scorched Sojourn\" Version 5.0 Update Details",
+            "link": "https://hoyo.link/9K0kFBAL",
+            "date": "08/28"
+        },
+        {
+            "id": "DggqtgtVvG",
+            "type": "POST_TYPE_ACTIVITY",
+            "title": "\"Flowers Resplendent on the Sun-Scorched Sojourn\" Version 5.0 Strategy Guides Contest",
+            "link": "https://hoyo.link/70WkFHAL",
+            "date": "08/28"
+        },
+        {
+            "id": "U18GML5T63",
+            "type": "POST_TYPE_INFO",
+            "title": "\"Flowers Resplendent on the Sun-Scorched Sojourn\" Version 5.0 Events Preview - Phase I",
+            "link": "https://hoyo.link/2aYkFHAL",
+            "date": "08/26"
+        },
+        {
+            "id": "zhhwtPaz4X",
+            "type": "POST_TYPE_INFO",
+            "title": "Collected Miscellany - \"Kachina: Echoes of the Mountains\" | Genshin Impact",
+            "link": "https://hoyo.link/9IYkFBAL",
+            "date": "08/24"
+        },
+        {
+            "id": "lF9fPNIftq",
+            "type": "POST_TYPE_INFO",
+            "title": "Collected Miscellany - \"Mualani: An Enrapturing Scenic Tour\" | Genshin Impact",
+            "link": "https://hoyo.link/9BXkFBAL",
+            "date": "08/23"
+        },
+        {
+            "id": "hJz58vur94",
+            "type": "POST_TYPE_INFO",
+            "title": "Genshin Impact Discord Account Linking Now Available!",
+            "link": "https://hoyo.link/7oTkFHAL",
+            "date": "08/22"
+        }
+    ],
+    "social_media_list": [
+        {
+            "id": "2bsPSO6osX",
+            "icon": {
+                "url": "https://launcher-webstatic.hoyoverse.com/launcher-public/2024/05/15/a1b226ceebccd56768c5272f306f380e_4710708920702489320.png",
+                "hover_url": "",
+                "link": ""
+            },
+            "qr_image": {
+                "url": "https://launcher-webstatic.hoyoverse.com/launcher-public/2024/05/15/dc794590ce0ce174f9627d74ac6cb38b_75198024119073500.png",
+                "link": ""
+            },
+            "qr_desc": "",
+            "links": [
+                {
+                    "title": "HoYoLAB Community",
+                    "link": "https://www.hoyolab.com/home?lang=en-us&utm_source=launcher&utm_medium=game&from_id=2&utm_campaign=mimoicon"
+                }
+            ],
+            "enable_red_dot": false,
+            "red_dot_content": ""
+        },
+        {
+            "id": "Ki7QSzK75e",
+            "icon": {
+                "url": "https://launcher-webstatic.hoyoverse.com/launcher-public/2024/05/15/de382e69cb1a7afc46486c95207db733_5328107646823583568.png",
+                "hover_url": "",
+                "link": "https://hoyo.link/56v1BCAd"
+            },
+            "qr_image": {
+                "url": "",
+                "link": ""
+            },
+            "qr_desc": "",
+            "links": [],
+            "enable_red_dot": false,
+            "red_dot_content": ""
+        },
+        {
+            "id": "pSKVL6QcqT",
+            "icon": {
+                "url": "https://launcher-webstatic.hoyoverse.com/launcher-public/2024/05/15/f6cc67d31fc009dc6d369cd2a619b1b4_4771236149512887251.png",
+                "hover_url": "",
+                "link": "https://hoyo.link/e0v1BRAd"
+            },
+            "qr_image": {
+                "url": "",
+                "link": ""
+            },
+            "qr_desc": "",
+            "links": [],
+            "enable_red_dot": false,
+            "red_dot_content": ""
+        },
+        {
+            "id": "gl1hf4ejqK",
+            "icon": {
+                "url": "https://launcher-webstatic.hoyoverse.com/launcher-public/2024/05/15/17106a7bbb7c1bcae00b7f3e1612fc3b_348615524006532840.png",
+                "hover_url": "",
+                "link": "https://hoyo.link/a2v1B9Ad"
+            },
+            "qr_image": {
+                "url": "",
+                "link": ""
+            },
+            "qr_desc": "",
+            "links": [],
+            "enable_red_dot": false,
+            "red_dot_content": ""
+        },
+        {
+            "id": "CIeu5LRh70",
+            "icon": {
+                "url": "https://launcher-webstatic.hoyoverse.com/launcher-public/2024/05/15/3b36920e61c880999325559f0df506de_3840726654233510117.png",
+                "hover_url": "",
+                "link": "https://hoyo.link/ecv1BbAd"
+            },
+            "qr_image": {
+                "url": "",
+                "link": ""
+            },
+            "qr_desc": "",
+            "links": [],
+            "enable_red_dot": false,
+            "red_dot_content": ""
+        },
+        {
+            "id": "D3omMxGLzu",
+            "icon": {
+                "url": "https://launcher-webstatic.hoyoverse.com/launcher-public/2024/05/15/54024804ec1b2247cf219c05e39d6c78_6713099726461129324.png",
+                "hover_url": "",
+                "link": "https://hoyo.link/6DOeFCAL"
+            },
+            "qr_image": {
+                "url": "",
+                "link": ""
+            },
+            "qr_desc": "",
+            "links": [],
+            "enable_red_dot": false,
+            "red_dot_content": ""
+        },
+        {
+            "id": "Wf5o1ByBRz",
+            "icon": {
+                "url": "https://launcher-webstatic.hoyoverse.com/launcher-public/2024/05/15/63dcf03a26d6cdd1ef4f23222fa4ca43_8778273236813196940.png",
+                "hover_url": "",
+                "link": "https://hoyo.link/5GOeFBAL"
+            },
+            "qr_image": {
+                "url": "",
+                "link": ""
+            },
+            "qr_desc": "",
+            "links": [],
+            "enable_red_dot": false,
+            "red_dot_content": ""
+        },
+        {
+            "id": "1TPRyiQdK5",
+            "icon": {
+                "url": "https://launcher-webstatic.hoyoverse.com/launcher-public/2024/05/15/4ddd0290b1c1829644167e2cbceb122a_1272686305946326383.png",
+                "hover_url": "",
+                "link": "https://hoyo.link/9vgeFBAL"
+            },
+            "qr_image": {
+                "url": "",
+                "link": ""
+            },
+            "qr_desc": "",
+            "links": [],
+            "enable_red_dot": false,
+            "red_dot_content": ""
+        }
+    ]
+}

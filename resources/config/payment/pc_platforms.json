@@ -1,0 +1,100 @@
+[
+  {
+    "pay_type": "CreditCard",
+    "display_name": "Credit Card/Debit Card",
+    "icon_url": "",
+    "pay_vendors": [
+      {
+        "game": "",
+        "pay_plat": "redirect",
+        "pay_type": "CreditCard",
+        "pay_vendor": "JCB-SSL",
+        "icon": "",
+        "display_name": "JCB",
+        "currency": [
+          "JPY"
+        ]
+      },
+      {
+        "game": "",
+        "pay_plat": "redirect",
+        "pay_type": "CreditCard",
+        "pay_vendor": "AMEX-SSL",
+        "icon": "",
+        "display_name": "American Express",
+        "currency": [
+          "JPY"
+        ]
+      },
+      {
+        "game": "",
+        "pay_plat": "worldpay",
+        "pay_type": "CreditCard",
+        "pay_vendor": "ECMC-SSL",
+        "icon": "",
+        "display_name": "Mastercard",
+        "currency": [
+          "JPY"
+        ]
+      },
+      {
+        "game": "",
+        "pay_plat": "worldpay",
+        "pay_type": "CreditCard",
+        "pay_vendor": "VISA-SSL",
+        "icon": "",
+        "display_name": "Visa",
+        "currency": [
+          "JPY"
+        ]
+      }
+    ]
+  },
+  {
+    "pay_type": "CounterPayment",
+    "display_name": "Counter Payment",
+    "icon_url": "",
+    "pay_vendors": [
+      {
+        "game": "",
+        "pay_plat": "xsolla",
+        "pay_type": "CounterPayment",
+        "pay_vendor": "3303",
+        "icon": "",
+        "display_name": "Konbini",
+        "currency": [
+          "JPY"
+        ]
+      }
+    ]
+  },
+  {
+    "pay_type": "e-Wallet",
+    "display_name": "E-wallet",
+    "icon_url": "",
+    "pay_vendors": [
+      {
+        "game": "",
+        "pay_plat": "xsolla",
+        "pay_type": "e-Wallet",
+        "pay_vendor": "3042",
+        "icon": "",
+        "display_name": "Webmoney",
+        "currency": [
+          "JPY"
+        ]
+      },
+      {
+        "game": "",
+        "pay_plat": "paypal",
+        "pay_type": "e-Wallet",
+        "pay_vendor": "PAYPAL",
+        "icon": "https://sdk.hoyoverse.com/upload/static-resource/2021/12/21/6548565ba2c702ebbe31521eace49f7e_6021718115746718026.png",
+        "display_name": "PayPal",
+        "currency": [
+          "JPY"
+        ]
+      }
+    ]
+  }
+]

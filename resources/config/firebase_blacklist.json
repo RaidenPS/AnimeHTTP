@@ -1,0 +1,44 @@
+{
+    "min_api":28,
+    "device":
+    [{
+        "firm":"vivo",
+        "models":"V2111,V2207,V2038,V2043,V2048,V2254,V2252,V2203,V2069,V2039,V2068,vivo 2019,V2062,V2027,V2032,V2134,V2102"
+    },
+    {
+        "firm":"samsung",
+        "models":"SM-A037F,SM-A037F/DS,SM-A037M,SM-A037G,SM-A037U,SM-S134DL,SM-A037W, SM-A037U1,SM-A035F,SM-A035F/DS,SM-A035M, SM-A035G,SM-A217F,SM-A217F/DS,SM-A217F/DSN,SM-A217M,SM-A217M/DS,SM-A217N,SM-A042F,SM-A042F/DS,SM-A042M,SM-A042M/DS,SM-T225,SM-T220,SM-T225N,SM-T227U,SM-A045F,SM-A045F/DS,SM-A045M,SM-T500,SM-T505,SM-T505N,SM-M127F,SM-F127G,SM-M127G,SM-M127F/DSN,SM-A415F/DSN,SM-A415F/DSM,SM-A415F,SM-A415F/DS,SCV48,SC-41A"
+    },
+    {
+       "firm":"HUAWEI",
+        "models":"SNE-AL00,SNE-LX1,SNE-LX2,SNE-LX3,INE-LX2"
+    },
+    {
+       "firm":"OPPO",
+        "models":"CPH2477,CPH2269,CPH2127,CPH2131,CPH2471,CPH2185,CPH1931,CPH1959,CPH1933,CPH1935,CPH1943,CPH1823,CPH1881,CPH1825,CPH2325,CPH2349"
+    },
+    {
+       "firm":"realme",
+        "models":"RMX3261,RMX3263,RMX3624,RMX2180,RMX2195,RMX3193,RMX3191,RMX3201,RMX3501,RMX3506"
+    },
+    {
+       "firm":"Redmi",
+        "models":"M1908C3IC,MZB8255IN,M1908C3IG,M1908C3IH,M1908C3JH,M1908C3JG,M1908C3JI,M1810F6LG,M1810F6LH,M1810F6LI"
+    },
+    {
+       "firm":"Infinix",
+        "models":"Infinix X6517,Infinix X6515,Infinix X688B,Infinix X688C,Infinix X680B, Infinix X680F,Infinix X6816,Infinix X6816C,Infinix X665B,Infinix X665"
+    },
+    {
+       "firm":"motorola",
+        "models":"moto e(7) plus,moto e32,moto g(7) power,moto e40,moto g(8) power lite,moto e(7),moto g(10),motorola one macro,moto g power 2021,moto g(7)"
+    },
+    {
+       "firm":"POCO",
+        "models":"220333QPG" 
+    },
+    {
+       "firm":"TECNO",
+        "models":"TECNO KE5j,TECNO KE5k" 
+    }]
+}

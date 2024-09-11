@@ -1,0 +1,65 @@
+{
+  "httpLang": "en_US",
+  "apiInfo": {
+    "ipinfodb": ""
+  },
+  "dbInfo": {
+    "url": "mongodb://localhost:27017",
+    "name": "raidenps",
+    "startPlayerCounterPosition": 100000
+  },
+  "gameInfo": {
+    "gameServerIP": "127.0.0.1",
+    "gameServerPort": 8882,
+    "gameVersion": "5.0.0",
+    "gateTicket": "I_AM_SPYWARE_GIVE_ME_DATA_UWU"
+  },
+  "useHTTPSProtocol": false,
+  "certPassword": "GENSHINIMPACTCERTIFICATE",
+  "host": "127.0.0.1",
+  "port": 8881,
+  "logRequests": false,
+  "collectGameLogs": false,
+  "isMaintenance": false,
+  "maintenanceStartDate": 0,
+  "maintenanceEndDate": 0,
+  "maintenanceUrl": "https://www.hoyolab.com/",
+  "maintenanceMsg": "Head on over to HoYoLAB to discuss new content updates and check out the latest game news!",
+  "forceUpdateUrl": "127.0.0.1",
+  "maxRequests": 1000,
+  "timeMillis": 1000,
+  "badIPS": [],
+  "enableIPWhitelist": false,
+  "whiteListIPS": [],
+  "enable_captcha": true,
+  "disableRegistrations": false,
+  "enable_guests": true,
+  "is_heartbeat_required": false,
+  "is_realname_required": false,
+  "is_guardian_required": false,
+  "display_retpoint": false,
+  "enable_consent_banner": false,
+  "crypt_password": true,
+  "envType": "SANDBOX_OS",
+  "const_launcher_id": "8fANlj5K7I",
+  "android_report_interval_seconds": 3,
+  "android_enable_device_report": true,
+  "firebase_device_blacklist_version": 1,
+  "firebase_blacklist_devices_switch": false,
+  "regions": [
+    {
+      "Name": "os_jp69",
+      "Title": "Localhost",
+      "Type": "DEV_PUBLIC",
+      "Ip": "127.0.0.1",
+      "Port": 8882
+    },
+    {
+      "Name": "os_jp70",
+      "Title": "Test",
+      "Type": "DEV_PRIVATE",
+      "Ip": "127.0.0.2",
+      "Port": 8882
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+[
+    {
+        "game": {
+            "id": "gopR6Cufr3",
+            "biz": "hk4e_global"
+        },
+        "version": "2.14.2",
+        "channel_sdk_pkg": {
+            "url": "https://launcher-webstatic.hoyoverse.com/launcher-public/2024/05/12/12e811ff46561379abff7282a7cd8a10_1858813474598479143.zip",
+            "md5": "12e811ff46561379abff7282a7cd8a10",
+            "size": "9692272",
+            "decompressed_size": "19384544"
+        },
+        "pkg_version_file_name": "sdk_pkg_version"
+    }
+]

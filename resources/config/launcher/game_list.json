@@ -1,0 +1,22 @@
+[
+    {
+        "game": {
+            "id": "gopR6Cufr3",
+            "biz": "hk4e_global"
+        },
+        "backgrounds": [
+            {
+                "id": "w7wVeZJLFC",
+                "background": {
+                    "url": "https://launcher-webstatic.hoyoverse.com/launcher-public/2024/08/27/9612bfc93b7680c25a7975c55cd1f91d_1635449030506912040.webp",
+                    "link": ""
+                },
+                "icon": {
+                    "url": "https://launcher-webstatic.hoyoverse.com/launcher-public/2024/07/16/65ae0a0a502e81ab6b384a5e440d361d_259210130536147807.png",
+                    "hover_url": "",
+                    "link": "https://act.hoyoverse.com/ys/event/blue-post/index.html?page_sn=8c0399aea4d14c33&mhy_presentation_style=fullscreen&utm_source=launchergenshin&utm_medium=news#/index"
+                }
+            }
+        ]
+    }
+]

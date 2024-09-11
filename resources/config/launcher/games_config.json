@@ -1,0 +1,31 @@
+[
+    {
+        "id": "gopR6Cufr3",
+        "biz": "hk4e_global",
+        "display": {
+            "language": "en-us",
+            "name": "Genshin Impact",
+            "icon": {
+                "url": "https://fastcdn.hoyoverse.com/static-resource-v2/2024/07/11/4169347996bc2dfea1e108af3baa8632_1874103912435307807.png",
+                "hover_url": "",
+                "link": ""
+            },
+            "title": "",
+            "subtitle": "",
+            "background": {
+                "url": "https://fastcdn.hoyoverse.com/static-resource-v2/2024/05/30/a5555e5aa4f4da3d1efc3b86ef65e456_7792457472547838550.webp",
+                "link": ""
+            },
+            "logo": {
+                "url": "https://fastcdn.hoyoverse.com/static-resource-v2/2024/05/30/7f777384d29cac1ea0d34b4e16d4487b_2092553358310716519.png",
+                "link": ""
+            },
+            "thumbnail": {
+                "url": "https://fastcdn.hoyoverse.com/static-resource-v2/2024/05/30/68e8178e137f6b0259e4da49b5a9be8e_8412451782424407383.png",
+                "link": ""
+            }
+        },
+        "reservation": null,
+        "display_status": "LAUNCHER_GAME_DISPLAY_STATUS_AVAILABLE"
+    }
+]

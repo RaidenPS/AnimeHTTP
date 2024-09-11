@@ -1,0 +1,29 @@
+{
+  "allowed_fields": [
+    "manufacturer",
+    "os",
+    "app_version",
+    "androidid",
+    "istablet",
+    "android_version",
+    "mac",
+    "deviceid",
+    "pkgname",
+    "tz",
+    "lib",
+    "lib_version",
+    "resolution",
+    "network_type",
+    "osversion",
+    "carrier",
+    "model",
+    "devicetype",
+    "screen_brightness",
+    "audio_volume",
+    "gyroData",
+    "electricityData",
+    "ua",
+    "gaid",
+    "language"
+  ]
+}

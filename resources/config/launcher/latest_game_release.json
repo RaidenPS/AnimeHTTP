@@ -1,0 +1,22 @@
+{
+    "strategy_id": 0,
+    "update_type": 0,
+    "dialog_num": 0,
+    "dialog_period_type": 0,
+    "dialog_period": 0,
+    "dialog_title": "",
+    "dialog_content": "",
+    "package_name": "",
+    "package_url": "",
+    "package_size": "0",
+    "has_update": false,
+    "package_version": "",
+    "package_md5": "",
+    "user_defined": "",
+    "update_recommended_intensity": "",
+    "dialog_content_en": "",
+    "dialog_title_en": "",
+    "dialog": "",
+    "hyp_game_ids": [],
+    "silent": ""
+}

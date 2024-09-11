@@ -1,0 +1,49 @@
+[
+    {
+        "game": {
+            "id": "gopR6Cufr3",
+            "biz": "hk4e_global"
+        },
+        "deprecated_files": [
+            {
+                "name": "mhyprot2.Sys"
+            },
+            {
+                "name": "GenshinImpact_Data/Native/UserAssembly.dll"
+            },
+            {
+                "name": "mhyprot3.Sys"
+            },
+            {
+                "name": "GenshinImpact_Data/Plugins/metakeeper.dll"
+            },
+            {
+                "name": "GenshinImpact_Data/Plugins/widevinecdmadapter.dll"
+            },
+            {
+                "name": "GenshinImpact_Data/Plugins/XInputInterface64.dll"
+            },
+            {
+                "name": "GenshinImpact_Data/blueReporter.exe"
+            },
+            {
+                "name": "GenshinImpact_Data/Plugins/InControlNative.dll"
+            },
+            {
+                "name": "GenshinImpact_Data/Plugins/PCGameSDK.dll"
+            },
+            {
+                "name": "GenshinImpact_Data/Plugins/d3dcompiler_43.dll"
+            },
+            {
+                "name": "GenshinImpact_Data/Plugins/sqlite3.dll"
+            },
+            {
+                "name": "UnityPlayer.dll"
+            },
+            {
+                "name": "GenshinImpact_Data/Plugins/xlua.dll"
+            }
+        ]
+    }
+]

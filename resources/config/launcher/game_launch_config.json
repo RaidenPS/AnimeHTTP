@@ -1,0 +1,19 @@
+[
+  {
+    "game": {
+      "id": "gopR6Cufr3",
+      "biz": "hk4e_global"
+    },
+    "exe_file_name": "GenshinImpact.exe",
+    "installation_dir": "Genshin Impact game",
+    "audio_pkg_scan_dir": "GenshinImpact_Data/Persistent/audio_lang_14",
+    "audio_pkg_res_dir": "GenshinImpact_Data/StreamingAssets/AudioAssets",
+    "audio_pkg_cache_dir": "GenshinImpact_Data/Persistent/AudioAssets",
+    "game_cached_res_dir": "GenshinImpact_Data/Persistent",
+    "game_screenshot_dir": "ScreenShot",
+    "game_log_gen_dir": "%userprofile%/AppData/LocalLow/miHoYo/Genshin Impact",
+    "game_crash_file_gen_dir": "%userprofile%/AppData/Local/Temp",
+    "default_download_mode": "DOWNLOAD_MODE_CHUNK",
+    "enable_customer_service": true
+  }
+]

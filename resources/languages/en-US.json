@@ -1,0 +1,50 @@
+{
+  "messages": {
+	"http": {
+		"parameter_error": "The parameters passed in are incorrect",
+		"parameter_error2": "ERROR_PARAMS",
+		"system_error": "System error",
+		"signature_error": "Signature error",
+		"authentication_error": "Authentication failed",
+		"server_busy": "Server busy. Please try again later.(502)",
+		"noconfig": "RetCode_NoConfig",
+		"invalidmodule": "RetCode_InvalidModule",
+		"invalidconfigkey": "RetCode_InvalidKey",
+		"protocol_load_failed": "Protocol loading failed",
+		"unknown_error": "Something went wrong...please retry later",
+		"appid_error": "AppID错误",
+		"platform_mismatch_error": "platform: %s不匹配",
+		"launcher_not_found": "launcher not found",
+		"agreement_not_found": "agreement not found",
+		"register_upload_log_failed": "Invalid timestamp or verification",
+		"login_account_failed1": "Password decryption failed, switching to IP matching.",
+		"login_account_failed2": "Account or password error",
+		"session_key_failed": "Session key authentication failed",
+		"access_token_failed": "Access token authentication failed",
+		"register_account_failed1": "Passwords does not match",
+		"register_account_failed2": "Username already exist",
+		"register_account_failed3": "Password encryption fail",
+		"device_check_invalid_code": "Invalid verification code",
+		"reactivate_account_verify_fail": "Invalid verification info. Please exit and try again.",
+		"invalid_phone_number_found": "Please fill in a valid mobile phone number",
+		"missing_parameters_request_failed": "Missing parameters, request failed",
+		"account_error_found": "Account error",
+		"invalid_request_error": "Invalid request",
+		"invalid_submitted_parameters_error": "The submitted parameters are incorrect.",
+		"guests_are_not_allowed": "Guests are disabled",
+		"invalid_game_name": "Game does not exist"
+	},
+	"template": {
+		"accReg": "Account Registration",
+		"registrByEmail": "Register by Email",
+		"forgotpass": "Forgotten password",
+		"recoverByEmail": "Recover your account by Email",
+		"username": "Username",
+		"email": "Email",
+		"password": "8-30 characters (mix of both numbers and letters)",
+		"confirmpass": "Confirm Password",
+		"confirmReg": "Register",
+		"confirmRec": "Recover"
+	}
+  }
+}

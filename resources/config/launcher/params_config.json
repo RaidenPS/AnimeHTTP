@@ -1,0 +1,15 @@
+{
+    "is_enabled": true,
+    "buffer_size": 32,
+    "retry_on_download_failure": 5,
+    "request_timeout_wait_time": 30,
+    "max_concurrent_tasks": 4,
+    "max_validation_threads": 1,
+    "error_retry_mode": 1,
+    "max_backoff_seconds": 33,
+    "buffer_queue_size": 10240,
+    "multi_thread_io_read_enabled": false,
+    "multi_thread_io_write_enabled": false,
+    "chunk_max_concurrent_tasks": 6,
+    "chunk_max_validation_threads": 6
+}
