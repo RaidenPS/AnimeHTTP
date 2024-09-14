@@ -28,6 +28,7 @@ import raidenhttp.cache.protos.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionH
 import raidenhttp.cache.protos.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp;
 import raidenhttp.cache.protos.RegionInfoOuterClass.RegionInfo;
 import raidenhttp.cache.protos.RegionSimpleInfoOuterClass.RegionSimpleInfo;
+import raidenhttp.cache.protos.ResVersionConfigOuterClass.ResVersionConfig;
 import raidenhttp.cache.protos.StopServerInfoOuterClass.StopServerInfo;
 
 // Utils
@@ -47,9 +48,12 @@ public class RegionRequestRouter implements Router {
     private static ByteString getCurrentRegionCustomConfig() {
         JsonObject customConfig = new JsonObject();
         JsonArray engineCodeSwitch = new JsonArray();
+        JsonArray extendedSwitch = new JsonArray();
         JsonArray coverSwitch = new JsonArray();
         JsonArray codeSwitch = new JsonArray();
         JsonArray il2cppCodeSwitch = new JsonArray();
+        JsonArray channelCoverSwitch = new JsonArray();
+        JsonArray platformCoverSwitch = new JsonArray();
         JsonObject mtrConfig = new JsonObject();
         JsonObject urlCheckConfig = new JsonObject();
         JsonObject reportNetDelayConfig = new JsonObject();
@@ -57,14 +61,17 @@ public class RegionRequestRouter implements Router {
         coverSwitch.add(CoverSwitchType.FEEDBACK.getValue());
         coverSwitch.add(CoverSwitchType.SURVEY.getValue());
         coverSwitch.add(CoverSwitchType.USER_CENTER.getValue());
-        //codeSwitch.add(4334);
-        il2cppCodeSwitch.add(2);
-        il2cppCodeSwitch.add(8);
+        il2cppCodeSwitch.add(5);
+        il2cppCodeSwitch.add(6);
+        il2cppCodeSwitch.add(7);
 
         customConfig.add("codeSwitch", codeSwitch);
         customConfig.add("coverSwitch", coverSwitch);
         customConfig.add("engineCodeSwitch", engineCodeSwitch);
+        customConfig.add("extendedSwitch", extendedSwitch);
         customConfig.add("il2cppCodeSwitch", il2cppCodeSwitch);
+        customConfig.add("channelCoverSwitch", channelCoverSwitch);
+        customConfig.add("platformCoverSwitch", platformCoverSwitch);
         customConfig.addProperty("perf_report_enable", "true");
         customConfig.addProperty("perf_report_servertype", String.valueOf(ServerType.ASIA.getValue()));
         //customConfig.addProperty("perf_report_percent", "100");
@@ -85,18 +92,31 @@ public class RegionRequestRouter implements Router {
         customConfig.addProperty("bilibiliShareTopics", "753");
 
         mtrConfig.addProperty("isOpen", "true");
-        mtrConfig.addProperty("maxTTL", "5");
-        mtrConfig.addProperty("timeOut", "10");
+        mtrConfig.addProperty("maxTTL", "32");
+        mtrConfig.addProperty("timeOut", "5000");
         mtrConfig.addProperty("traceCount", "5");
-        mtrConfig.addProperty("abortTimeOutCount", "0");
-        mtrConfig.addProperty("autoTraceInterval", "0");
+        mtrConfig.addProperty("abortTimeOutCount", "3");
+        mtrConfig.addProperty("autoTraceInterval", "3600");
+        mtrConfig.addProperty("traceCDEachReason", "600");
+        mtrConfig.addProperty("timeInterval", "1000");
+        mtrConfig.addProperty("useOldWinVersion", "false");
+        mtrConfig.addProperty("banReasons", "");
         customConfig.add("mtrConfig", mtrConfig);
 
         urlCheckConfig.addProperty("isOpen", "true");
+        urlCheckConfig.addProperty("timeOut", "5000");
+        urlCheckConfig.addProperty("errorTraceCount", "0");
+        urlCheckConfig.addProperty("successTraceCount", "0");
+        urlCheckConfig.addProperty("abortTimeOutCount", "3600");
+        urlCheckConfig.addProperty("timeInterval", "1000");
+        urlCheckConfig.addProperty("checkCDEachReason", "0");
+        urlCheckConfig.addProperty("banReasons", "");
         customConfig.add("urlCheckConfig", urlCheckConfig);
 
         reportNetDelayConfig.addProperty("openGateserver", "true");
         customConfig.add("reportNetDelayConfig", reportNetDelayConfig);
+
+        customConfig.add("greyTest", Json.parseObject("[{\"platforms\":[\"Android\",\"IOS\",\"PC\"],\"rate\":1,\"il2cppCodeSwitchs\":[],\"codeSwitchs\":[], \"engineCodeSwitchs\":[]}]"));
 
         var encryptedConfig = Json.encode(customConfig).getBytes();
         Hashing.xorEncrypt(encryptedConfig, Cryptography.DISPATCH_KEY);
@@ -148,13 +168,12 @@ public class RegionRequestRouter implements Router {
                 var regionInfo =
                         RegionInfo.newBuilder()
                                 .setUseGateserverDomainName(false)
-                                .setGateserverIpv6Ip("::1")
                                 .setGateserverIp(region.Ip)
                                 .setGateserverPort(region.Port)
                                 .setGameBiz(Utils.getGameBiz())
-                                //.setResourceUrl("127.0.0.1")
-                                //.setClientDataVersion(69420)
-                                //.setClientSilenceDataVersion(69421)
+                                .setAreaType("JP")
+                                .setPayCallbackUrl("http://10.101.11.129:22601/recharge")
+                                .setCdkeyUrl("https://hk4e-api.mihoyo.com/common/apicdkey/api/exchangeCdkey?sign_type=2&auth_appid=apicdkey&authkey_ver=1")
                                 .build();
 
                 var updatedQuery =
@@ -163,7 +182,7 @@ public class RegionRequestRouter implements Router {
                                 .setRegionInfo(regionInfo)
                                 .setClientSecretKey(ByteString.copyFrom(Cryptography.DISPATCH_SEED))
                                 .setRegionCustomConfigEncrypted(RegionRequestRouter.getCurrentRegionCustomConfig())
-                                .setClientRegionCustomConfigEncrypted(RegionRequestRouter.getAllRegionsCustomConfig())
+                                //.setClientRegionCustomConfigEncrypted(RegionRequestRouter.getAllRegionsCustomConfig())
                                 .setConnectGateTicket(ConfigManager.httpConfig.gameInfo.gateTicket)
                                 .build();
                 regions.put(region.Name, new StructureRegionDataRequest(updatedQuery, Hashing.base64Encode(updatedQuery.toByteString().toByteArray())));

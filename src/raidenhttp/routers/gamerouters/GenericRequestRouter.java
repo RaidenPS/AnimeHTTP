@@ -13,6 +13,7 @@ import java.io.IOException;
 import java.util.*;
 
 // Structures
+import raidenhttp.utils.structures.StructureGenWaterMarkRequest;
 import raidenhttp.utils.structures.StructureGetFPRequest;
 
 // Translation
@@ -195,6 +196,8 @@ public class GenericRequestRouter implements Router {
      * client_type -> Client platform id.
      */
     private static void drmSwitchRequest(Context ctx) {
+        /// TODO: Investigation
+
         JsonObject response = new JsonObject();
         JsonObject data = new JsonObject();
 
@@ -268,6 +271,28 @@ public class GenericRequestRouter implements Router {
         ctx.result(Json.toJsonString(response)).contentType("application/json");
     }
 
+    /**
+     * No Parameters
+     */
+    private static void genWatermark(Context ctx) {
+        /// TODO: Investigation
+
+        var bodyData = Json.decode(ctx.body(), StructureGenWaterMarkRequest.class);
+        JsonObject response = new JsonObject();
+
+        if(bodyData == null || !Objects.equals(bodyData.app_id, "c7ahnfpzpuyo")) {
+            response.addProperty("retcode", Retcodes.GAME_BIZ_MISSION_ERROR_VALUE);
+            response.addProperty("message", "INVALID_TOKEN");
+            response.add("data", null);
+        }
+        else {
+            response.addProperty("retcode", Retcodes.RETCODE_SUCCESS);
+            response.addProperty("message", "OK");
+        }
+
+        ctx.result(Json.toJsonString(response)).contentType("application/json");
+    }
+
     @Override
     public void applyRoutes(Javalin javalin) {
         /// https://apm-log-upload.mihoyo.com/_ts
@@ -307,5 +332,8 @@ public class GenericRequestRouter implements Router {
 
         /// https://sdk-static.mihoyo.com/combo/box/api/config/sw/precache
         javalin.get("combo/box/api/config/sw/precache", GenericRequestRouter::getPrecacheResponse);
+
+        /// https://sdk-common-api.hoyoverse.com/sdk_global/marker/api/genMark
+        javalin.post("sdk_global/marker/api/genMark", GenericRequestRouter::genWatermark);
     }
 }

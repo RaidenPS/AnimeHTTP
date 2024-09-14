@@ -1,7 +1,6 @@
 package raidenhttp.enums;
 
 /// FIXME: INVESTIGATE CodeSwitch!
-
 public enum CodeSwitchType {
     DEFAULT(0);
 

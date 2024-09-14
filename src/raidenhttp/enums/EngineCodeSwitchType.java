@@ -1,4 +1,4 @@
-package raidenhttp.config.objects;
+package raidenhttp.enums;
 
 /// FIXME: INVESTIGATE EngineCodeSwitch!
 public enum EngineCodeSwitchType {
