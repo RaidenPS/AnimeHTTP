@@ -13,13 +13,13 @@ import java.io.IOException;
 import lombok.Getter;
 import lombok.Setter;
 import org.reflections.Reflections;
-import org.slf4j.*;
 
 // Translate
+import raidenhttp.utils.CustomLogger;
 import raidenhttp.utils.Language;
 
 public final class Main {
-    @Getter private static final Logger logger = LoggerFactory.getLogger(Main.class);
+    @Getter private static final CustomLogger logger = new CustomLogger();
     @Getter @Setter private static AuthenticationSystem authenticationSystem = new DefaultAuthentication();
     private static final HTTPServer httpServer;
 
@@ -53,9 +53,9 @@ public final class Main {
     private static void startDatabase()  {
         try {
             DatabaseManager.initialize(ConfigManager.httpConfig.dbInfo.url, ConfigManager.httpConfig.dbInfo.name);
-            logger.info("Database initialized successfully. URL: {}", ConfigManager.httpConfig.dbInfo.url);
+            logger.info("Database initialized successfully. URL: %s", ConfigManager.httpConfig.dbInfo.url);
         }catch (Exception e) {
-            logger.error("Unable to start the database. (Server aborted) Error: {}", e.getMessage());
+            logger.error("Unable to start the database. (Server aborted) Error: %s", e.getMessage());
             System.exit(1);
         }
 
@@ -66,7 +66,7 @@ public final class Main {
             Cryptography.loadCryptoKeys();
             logger.info("Encryption initialized successfully.");
         }catch (Exception e) {
-            logger.error("Unable to load the encryption keys. (Server aborted) Error: {}", e.getMessage());
+            logger.error("Unable to load the encryption keys. (Server aborted) Error: %s", e.getMessage());
             System.exit(1);
         }
     }

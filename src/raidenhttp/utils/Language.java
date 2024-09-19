@@ -33,7 +33,7 @@ public final class Language {
 
             object.entrySet().forEach(entry -> putFlattenedKey(translations, entry.getKey(), entry.getValue()));
         } catch (Exception exception) {
-            Main.getLogger().warn("Failed to load language file: {}", description.getLanguageCode(), exception);
+            Main.getLogger().warn("Failed to load language file: %s", description.getLanguageCode(), exception);
         }
     }
 
@@ -83,7 +83,7 @@ public final class Language {
         try {
             return translated.formatted(args);
         } catch (Exception exception) {
-            Main.getLogger().error("Failed to format string: {}", key, exception);
+            Main.getLogger().error("Failed to format string: %s", key, exception);
             return translated;
         }
     }
@@ -117,7 +117,7 @@ public final class Language {
         try {
             return translated.formatted(args);
         } catch (Exception ex) {
-            Main.getLogger().error("Failed to format string: {}", key, ex);
+            Main.getLogger().error("Failed to format string: %s", key, ex);
             return translated;
         }
     }

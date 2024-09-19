@@ -6,7 +6,6 @@ import java.nio.file.*;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
-import org.jetbrains.annotations.Nullable;
 
 public final class FileUtils {
     /**
@@ -51,7 +50,7 @@ public final class FileUtils {
      * @param stream The input stream.
      * @return The string.
      */
-    public static String readFromInputStream(@Nullable InputStream stream) {
+    public static String readFromInputStream(InputStream stream) {
         if (stream == null) return null;
 
         StringBuilder stringBuilder = new StringBuilder();

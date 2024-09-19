@@ -139,13 +139,13 @@ public class RegionRequestRouter implements Router {
         customConfig.addProperty("regionDispatchType", "0");
         customConfig.addProperty("videoKey", "5578228838233776"); /// wtf mihoyo
 
-        customConfig.addProperty("downloadThreadNum", "20"); /// NEED TEST
-        customConfig.addProperty("downloadIgnore403", "false"); /// NEED TEST
-        customConfig.addProperty("downloadNoAudioDiff", "false"); /// NEED TEST
-        customConfig.addProperty("downloadExcludeUselessRes", "false"); /// NEED TEST
-        customConfig.addProperty("downloadEnableXXhash", "true"); /// NEED TEST
-        customConfig.addProperty("downloadEnableUltraVerify", "true"); /// NEED TEST
-        customConfig.addProperty("downloadVerifyRetryNum", "3"); /// NEED TEST
+        customConfig.addProperty("downloadThreadNum", "20");
+        customConfig.addProperty("downloadIgnore403", "false");
+        customConfig.addProperty("downloadNoAudioDiff", "false");
+        customConfig.addProperty("downloadExcludeUselessRes", "false");
+        customConfig.addProperty("downloadEnableXXhash", "true");
+        //customConfig.addProperty("downloadEnableUltraVerify", "true");
+        //customConfig.addProperty("downloadVerifyRetryNum", "3");
 
         var encryptedConfig = Json.encode(customConfig).getBytes();
         Hashing.xorEncrypt(encryptedConfig, Cryptography.DISPATCH_KEY);
@@ -171,9 +171,28 @@ public class RegionRequestRouter implements Router {
                                 .setGateserverIp(region.Ip)
                                 .setGateserverPort(region.Port)
                                 .setGameBiz(Utils.getGameBiz())
+                                .setDataUrl("https://autopatchcn.yuanshen.com/client_design_data/5.0_live")
+                                .setResourceUrl("https://autopatchcn.yuanshen.com/client_game_res/5.0_live")
+                                .setResourceUrlBak("5.0_live")
+                                .setNextResourceUrl("https://autopatchcn.yuanshen.com/client_game_res/5.0_live")
+                                .setClientDataVersion(26487341)
+                                .setClientSilenceDataVersion(26368837)
+                                .setClientVersionSuffix("57a90bbd52")
+                                .setClientSilenceVersionSuffix("0af120923b")
                                 .setAreaType("JP")
                                 .setPayCallbackUrl("http://10.101.11.129:22601/recharge")
                                 .setCdkeyUrl("https://hk4e-api.mihoyo.com/common/apicdkey/api/exchangeCdkey?sign_type=2&auth_appid=apicdkey&authkey_ver=1")
+                                .setClientDataMd5("{\"remoteName\": \"data_versions\", \"md5\": \"88a0d1f6825ec3b6aaf9ea39a02f78da\", \"hash\": \"a72baf3b5c76f0ac\", \"fileSize\": 68545}\r\n{\"remoteName\": \"data_versions_medium\", \"md5\": \"9429b4e9dd8cbdaf19c41ff05f18b384\", \"hash\": \"a79950c775cf1630\", \"fileSize\": 6662}")
+                                .setClientSilenceDataMd5("{\"remoteName\": \"data_versions\", \"md5\": \"8ae3d12ddeffa27349ab306ce05ec0b7\", \"hash\": \"ef8cb53633584c7a\", \"fileSize\": 522}")
+                                .setResVersionConfig(
+                                        ResVersionConfig.newBuilder()
+                                                .setRelogin(true)
+                                                .setMd5("{\"remoteName\": \"base_revision\", \"md5\": \"149cad27b543e345df504a496949ec7d\", \"fileSize\": 19}")
+                                                .setVersion(26458901)
+                                                .setReleaseTotalSize("0")
+                                                .setVersionSuffix("befdda25ff")
+                                                .setBranch("5.0_live")
+                                        .buildPartial())
                                 .build();
 
                 var updatedQuery =
@@ -182,7 +201,6 @@ public class RegionRequestRouter implements Router {
                                 .setRegionInfo(regionInfo)
                                 .setClientSecretKey(ByteString.copyFrom(Cryptography.DISPATCH_SEED))
                                 .setRegionCustomConfigEncrypted(RegionRequestRouter.getCurrentRegionCustomConfig())
-                                //.setClientRegionCustomConfigEncrypted(RegionRequestRouter.getAllRegionsCustomConfig())
                                 .setConnectGateTicket(ConfigManager.httpConfig.gameInfo.gateTicket)
                                 .build();
                 regions.put(region.Name, new StructureRegionDataRequest(updatedQuery, Hashing.base64Encode(updatedQuery.toByteString().toByteArray())));
