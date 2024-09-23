@@ -1,0 +1,7 @@
+{
+  "enabled": "true",
+  "minUploadEventTriggerSize": "10",
+  "uploadEventPageSize": "50",
+  "minimumUploadInterval": "10",
+  "disabledPaths": "[]"
+}

@@ -23,7 +23,7 @@
       "report_black_list": "{\"key\":[\"download_update_progress\"]}",
       "enable_attribution": "true",
       "h5log_config": " { \"enable\": 1, \"level\": \"Debug\" } ",
-      "enable_apm_sdk": "false",
+      "enable_apm_sdk": "true",
       "email_bind_remind_interval": "7",
       " network_report_config": "{\n        \"enable\": 1,\n        \"status_codes\": [],\n        \"url_paths\": [\"/dataUpload\",\"combo/postman/device/setAlias\"]\n}",
       "h5log_filter_config": "{\n\t\"function\": {\n\t\t\"event_name\": [\"report_set_info\", \"notice_close_notice\", \"info_get_channel_id\", \"apm_crash_add_custom_key_value\", \"push_clear_local_notification\", \"launch_del_notification\", \"info_get_sub_channel_id\", \"login_set_server_id\"]\n\t}\n}"

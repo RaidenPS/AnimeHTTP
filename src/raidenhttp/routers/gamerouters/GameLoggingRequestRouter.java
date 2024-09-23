@@ -152,6 +152,17 @@ public class GameLoggingRequestRouter implements Router {
         ctx.result(Json.toJsonString(response)).contentType("application/json");
     }
 
+    /**
+     * No Parameters
+     */
+    private static void uploadLoginSdk(Context ctx) {
+        JsonObject response = new JsonObject();
+        JsonArray jsonArray = Json.parseObject(ctx.body()).getAsJsonArray();
+        DatabaseHelper.gameLog(jsonArray.get(0).toString(), "loginsdklogs");
+        response.addProperty("code", 0);
+        ctx.result(Json.toJsonString(response)).contentType("application/json");
+    }
+
     @Override
     public void applyRoutes(Javalin javalin) {
         /// https://ys-log-upload.mihoyo.com/crash/dataUpload
@@ -184,5 +195,8 @@ public class GameLoggingRequestRouter implements Router {
 
         /// https://log-upload.mihoyo.com/ys_custom/dataUpload
         javalin.post("ys_custom/dataUpload", GameLoggingRequestRouter::uploadYsCustomConfig);
+
+        /// http://127.0.0.1:8881/loginsdk/dataUpload
+        javalin.post("loginsdk/dataUpload", GameLoggingRequestRouter::uploadLoginSdk);
     }
 }

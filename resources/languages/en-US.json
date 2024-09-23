@@ -3,6 +3,7 @@
 	"http": {
 		"parameter_error": "The parameters passed in are incorrect",
 		"parameter_error2": "ERROR_PARAMS",
+		"parameter_error3": "Invalid parameter",
 		"system_error": "System error",
 		"signature_error": "Signature error",
 		"authentication_error": "Authentication failed",

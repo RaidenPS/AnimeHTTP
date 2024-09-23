@@ -15,6 +15,7 @@ public final class Retcodes {
     public static final int RETCODE_CANCEL = -2;
     public static final int MISSING_PARAMETERS_REQUEST_FAILED_ERROR_VALUE = -3;
     public static final int RETCODE_NO_SUCH_METHOD_ERROR_CODE = -10;
+    public static final int AUTHORIZATION_FAILED_ERROR_VALUE = -100;
     public static final int SYSTEM_ERROR_VALUE = -101;
     public static final int APP_ID_NOT_FOUND_ERROR_VALUE = -102;
     public static final int GRANT_DEVICE_PARAMETER_ERROR_VALUE = -102;
@@ -39,6 +40,7 @@ public final class Retcodes {
     public static final int INVALID_SUBMITTED_PARAMETERS_ERROR_VALUE = -1003;
     public static final int LAUNCHER_ID_NOT_FOUND_ERROR_VALUE = -1200;
     public static final int LAUNCHER_AGREEMENT_NOT_FOUND_ERROR_VALUE = -1400;
+    public static final int ANDROID_PARAMETER_INVALID_ERROR_VALUE = -3001;
     public static final int LAUNCHER_UNKNOWN_ERROR_VALUE = -110001;
     public static final int INVALID_AUTHENTICATOR_ERROR_VALUE = -10010003;
 }

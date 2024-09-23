@@ -1,0 +1,308 @@
+{
+  "1": {
+    "apple_login": {
+      "enabled": true,
+      "disabled_versions": []
+    },
+    "vn_real_name": {
+      "enabled": false,
+      "disabled_versions": []
+    },
+    "twitter_login": {
+      "enabled": true,
+      "disabled_versions": []
+    },
+    "password_reset_entry": {
+      "enabled": true,
+      "disabled_versions": []
+    },
+    "pwd_login_tab": {
+      "enabled": true,
+      "disabled_versions": []
+    },
+    "bind_thirdparty": {
+      "enabled": false,
+      "disabled_versions": []
+    },
+    "user_name_bind_email": {
+      "enabled": true,
+      "disabled_versions": []
+    },
+    "third_party_bind_email": {
+      "enabled": false,
+      "disabled_versions": []
+    },
+    "marketing_authorization": {
+      "enabled": true,
+      "disabled_versions": []
+    },
+    "account_register_tab": {
+      "enabled": true,
+      "disabled_versions": []
+    },
+    "common_question_entry": {
+      "enabled": true,
+      "disabled_versions": []
+    },
+    "facebook_login": {
+      "enabled": true,
+      "disabled_versions": []
+    },
+    "firebase_return_unmasked_email": {
+      "enabled": true,
+      "disabled_versions": []
+    },
+    "vn_real_name_v2": {
+      "enabled": false,
+      "disabled_versions": []
+    },
+    "bind_user_thirdparty_email": {
+      "enabled": false,
+      "disabled_versions": []
+    }
+  },
+  "2": {
+    "bind_thirdparty": {
+      "enabled": false,
+      "disabled_versions": []
+    },
+    "facebook_login": {
+      "enabled": true,
+      "disabled_versions": []
+    },
+    "vn_real_name_v2": {
+      "enabled": false,
+      "disabled_versions": []
+    },
+    "account_register_tab": {
+      "enabled": true,
+      "disabled_versions": []
+    },
+    "twitter_login": {
+      "enabled": true,
+      "disabled_versions": []
+    },
+    "pwd_login_tab": {
+      "enabled": true,
+      "disabled_versions": []
+    },
+    "marketing_authorization": {
+      "enabled": true,
+      "disabled_versions": []
+    },
+    "vn_real_name": {
+      "enabled": false,
+      "disabled_versions": []
+    },
+    "common_question_entry": {
+      "enabled": true,
+      "disabled_versions": []
+    },
+    "bind_user_thirdparty_email": {
+      "enabled": false,
+      "disabled_versions": []
+    },
+    "password_reset_entry": {
+      "enabled": true,
+      "disabled_versions": []
+    },
+    "third_party_bind_email": {
+      "enabled": false,
+      "disabled_versions": []
+    },
+    "ui_v2": {
+      "enabled": false,
+      "disabled_versions": []
+    },
+    "user_name_bind_email": {
+      "enabled": true,
+      "disabled_versions": []
+    },
+    "google_login": {
+      "enabled": true,
+      "disabled_versions": []
+    },
+    "firebase_return_unmasked_email": {
+      "enabled": false,
+      "disabled_versions": []
+    }
+  },
+  "3": {
+    "bind_thirdparty": {
+      "enabled": false,
+      "disabled_versions": []
+    },
+    "common_question_entry": {
+      "enabled": true,
+      "disabled_versions": []
+    },
+    "vn_real_name": {
+      "enabled": false,
+      "disabled_versions": []
+    },
+    "usercenter_v2": {
+      "enabled": false,
+      "disabled_versions": []
+    },
+    "facebook_login": {
+      "enabled": true,
+      "disabled_versions": []
+    },
+    "account_register_tab": {
+      "enabled": true,
+      "disabled_versions": []
+    },
+    "bind_user_thirdparty_email": {
+      "enabled": false,
+      "disabled_versions": []
+    },
+    "vn_real_name_v2": {
+      "enabled": false,
+      "disabled_versions": []
+    },
+    "twitter_login": {
+      "enabled": true,
+      "disabled_versions": []
+    },
+    "google_login": {
+      "enabled": true,
+      "disabled_versions": []
+    },
+    "apple_login": {
+      "enabled": true,
+      "disabled_versions": []
+    },
+    "user_name_bind_email": {
+      "enabled": false,
+      "disabled_versions": []
+    },
+    "third_party_bind_email": {
+      "enabled": true,
+      "disabled_versions": []
+    },
+    "pwd_login_tab": {
+      "enabled": true,
+      "disabled_versions": []
+    },
+    "marketing_authorization": {
+      "enabled": false,
+      "disabled_versions": []
+    },
+    "password_reset_entry": {
+      "enabled": true,
+      "disabled_versions": []
+    },
+    "firebase_return_unmasked_email": {
+      "enabled": false,
+      "disabled_versions": []
+    }
+  },
+  "4": {
+    "firebase_return_unmasked_email": {
+      "enabled": false,
+      "disabled_versions": []
+    },
+    "password_reset_entry": {
+      "enabled": true,
+      "disabled_versions": []
+    },
+    "pwd_login_tab": {
+      "enabled": true,
+      "disabled_versions": []
+    },
+    "apple_login": {
+      "enabled": true,
+      "disabled_versions": []
+    },
+    "third_party_bind_email": {
+      "enabled": true,
+      "disabled_versions": []
+    },
+    "account_register_tab": {
+      "enabled": true,
+      "disabled_versions": []
+    },
+    "bind_user_thirdparty_email": {
+      "enabled": false,
+      "disabled_versions": []
+    },
+    "marketing_authorization": {
+      "enabled": false,
+      "disabled_versions": []
+    },
+    "twitter_login": {
+      "enabled": true,
+      "disabled_versions": []
+    },
+    "google_login": {
+      "enabled": true,
+      "disabled_versions": []
+    },
+    "bind_thirdparty": {
+      "enabled": false,
+      "disabled_versions": []
+    },
+    "common_question_entry": {
+      "enabled": true,
+      "disabled_versions": []
+    },
+    "facebook_login": {
+      "enabled": true,
+      "disabled_versions": []
+    }
+  },
+  "5": {
+    "marketing_authorization": {
+      "enabled": false,
+      "disabled_versions": []
+    },
+    "twitter_login": {
+      "enabled": true,
+      "disabled_versions": []
+    },
+    "bind_thirdparty": {
+      "enabled": false,
+      "disabled_versions": []
+    },
+    "facebook_login": {
+      "enabled": true,
+      "disabled_versions": []
+    },
+    "password_reset_entry": {
+      "enabled": true,
+      "disabled_versions": []
+    },
+    "pwd_login_tab": {
+      "enabled": true,
+      "disabled_versions": []
+    },
+    "google_login": {
+      "enabled": true,
+      "disabled_versions": []
+    },
+    "bind_user_thirdparty_email": {
+      "enabled": false,
+      "disabled_versions": []
+    },
+    "apple_login": {
+      "enabled": true,
+      "disabled_versions": []
+    },
+    "third_party_bind_email": {
+      "enabled": true,
+      "disabled_versions": []
+    },
+    "account_register_tab": {
+      "enabled": true,
+      "disabled_versions": []
+    },
+    "firebase_return_unmasked_email": {
+      "enabled": false,
+      "disabled_versions": []
+    },
+    "common_question_entry": {
+      "enabled": true,
+      "disabled_versions": []
+    }
+  }
+}

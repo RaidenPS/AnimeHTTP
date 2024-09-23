@@ -136,16 +136,15 @@ public class RegionRequestRouter implements Router {
         customConfig.addProperty("showexception",  "true");
         customConfig.addProperty("regionConfig", "pm|fk|add");
         customConfig.addProperty("downloadMode", "0");
-        customConfig.addProperty("regionDispatchType", "0");
-        customConfig.addProperty("videoKey", "5578228838233776"); /// wtf mihoyo
-
         customConfig.addProperty("downloadThreadNum", "20");
         customConfig.addProperty("downloadIgnore403", "false");
         customConfig.addProperty("downloadNoAudioDiff", "false");
         customConfig.addProperty("downloadExcludeUselessRes", "false");
         customConfig.addProperty("downloadEnableXXhash", "true");
-        //customConfig.addProperty("downloadEnableUltraVerify", "true");
+        customConfig.addProperty("downloadEnableUltraVerify", "true");
         //customConfig.addProperty("downloadVerifyRetryNum", "3");
+        customConfig.addProperty("regionDispatchType", "0");
+        customConfig.addProperty("videoKey", "5578228838233776"); /// wtf mihoyo
 
         var encryptedConfig = Json.encode(customConfig).getBytes();
         Hashing.xorEncrypt(encryptedConfig, Cryptography.DISPATCH_KEY);

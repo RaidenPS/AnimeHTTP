@@ -247,6 +247,19 @@ public class LoginRequestRouter implements Router {
         ctx.result(Json.toJsonString(response)).contentType("application/json");
     }
 
+    /**
+     * account -> Account name (Encrypted)<br>
+     * password -> Password (Encrypted)
+     */
+    private static void appLoginByPasswordRequest(Context ctx) {
+        /// FIXME: Investigation
+        JsonObject response = new JsonObject();
+        response.addProperty("retcode", Retcodes.AUTHORIZATION_FAILED_ERROR_VALUE);
+        response.addProperty("message", "Under maintenance.");
+        response.add("data", null);
+        ctx.result(Json.toJsonString(response)).contentType("application/json");
+    }
+
     @Override
     public void applyRoutes(Javalin javalin) {
         /// https://hk4e-sdk-os.hoyoverse.com/mdk/shield/api/login
@@ -287,5 +300,8 @@ public class LoginRequestRouter implements Router {
 
         /// https://hk4e-sdk-os.hoyoverse.com/hk4e_global/combo/granter/login/beforeVerify
         javalin.post(game_biz + "/combo/granter/login/beforeVerify", LoginRequestRouter::beforeVerificationRequest);
+
+        /// https://hk4e-sdk-os.hoyoverse.com/hk4e_global/account/ma-passport/api/appLoginByPassword
+        javalin.post(game_biz + "/account/ma-passport/api/appLoginByPassword", LoginRequestRouter::appLoginByPasswordRequest);
     }
 }

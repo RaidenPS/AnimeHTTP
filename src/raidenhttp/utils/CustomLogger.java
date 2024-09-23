@@ -12,6 +12,9 @@ public class CustomLogger {
     private static final String logFilePath = "raidenapp.log";
     private final PrintWriter fileWriter;
 
+    // Options
+    private final boolean isDebug = true;
+
     public enum LogLevel {
         NOTICE,
         INFO,
@@ -44,8 +47,10 @@ public class CustomLogger {
                 formattedMessage += "[INFO] " + message;
                 break;
             case DEBUG:
-                System.out.println(formattedMessage + Ansi.ansi().fg(Ansi.Color.MAGENTA).a("[DEBUG] ").fg(Ansi.Color.WHITE).a(message).reset());
-                formattedMessage += "[DEBUG] " + message;
+                if(this.isDebug) {
+                    System.out.println(formattedMessage + Ansi.ansi().fg(Ansi.Color.MAGENTA).a("[DEBUG] ").fg(Ansi.Color.WHITE).a(message).reset());
+                    formattedMessage += "[DEBUG] " + message;
+                }
                 break;
             case WARN:
                 System.out.println(formattedMessage + Ansi.ansi().fg(Ansi.Color.YELLOW).a("[WARN] ").fg(Ansi.Color.WHITE).a(message).reset());
@@ -78,7 +83,9 @@ public class CustomLogger {
     }
 
     public void debug(String message, Object... args) {
-        print(LogLevel.DEBUG, String.format(message, args));
+        if(this.isDebug) {
+            print(LogLevel.DEBUG, String.format(message, args));
+        }
     }
 
     public void warn(String message, Object... args) {
@@ -87,6 +94,10 @@ public class CustomLogger {
 
     public void error(String message, Object... args) {
         print(LogLevel.ERROR, String.format(message, args));
+    }
+
+    public void critical(String message, Object... args) {
+        print(LogLevel.CRITICAL, String.format(message, args));
     }
 
     public void stop() {

@@ -111,6 +111,85 @@ public class AndroidGenericRequestRouter implements Router {
 
     }
 
+    /**
+     * app_id -> Application id.<br>
+     * platform -> platform id.
+     */
+    private static void getSwitchStatus(Context ctx) {
+        String platform = ctx.queryParam("platform");
+        String app_id = ctx.queryParam("app_id");
+
+        JsonObject response = new JsonObject();
+        if(app_id == null || platform == null) {
+            response.add("data", null);
+            response.addProperty("retcode", Retcodes.ANDROID_PARAMETER_INVALID_ERROR_VALUE);
+            response.addProperty("message", translate("messages.http.parameter_error3"));
+        }
+        else {
+            JsonObject data = new JsonObject();
+            response.addProperty("retcode", Retcodes.RETCODE_SUCCESS);
+            response.addProperty("message", "OK");
+            try {
+                FileReader fileReader = new FileReader("./resources/config/getSwitchStatus.json");
+                data.add("switch_status_map", Json.parseObject(fileReader).getAsJsonObject().get(platform).getAsJsonObject());
+            }catch(IOException e) {
+                data.add("switch_status_map", null);
+            }
+            catch(Exception e) {
+                data.add("switch_status_map", new JsonObject());
+            }
+            response.add("data", data);
+        }
+        ctx.result(Json.toJsonString(response)).contentType("application/json");
+    }
+
+    /**
+     * appId ->Application id.<br>
+     * platform -> platform name.
+     */
+    private static void kibanaBoxRequest(Context ctx) {
+        String appId = ctx.queryParam("appId");
+        String platform = ctx.queryParam("platform");
+
+        JsonObject response = new JsonObject();
+        if(appId == null || platform == null || !platform.equals("android")) {
+            response.add("data", null);
+            response.addProperty("retcode", Retcodes.NO_CONFIG_FOUND_ERROR_VALUE);
+            response.addProperty("message", translate("messages.http.noconfig"));
+        }
+        else {
+            JsonObject data = new JsonObject();
+            response.addProperty("retcode", Retcodes.RETCODE_SUCCESS);
+            response.addProperty("message", "OK");
+            try {
+                FileReader fileReader = new FileReader("./resources/config/kibana_config.json");
+                data.add("vals", Json.parseObject(fileReader).getAsJsonObject());
+            }catch(IOException e) {
+                data.add("vals", null);
+            }
+            catch(Exception e) {
+                data.add("vals", new JsonObject());
+            }
+            response.add("data", data);
+        }
+        ctx.result(Json.toJsonString(response)).contentType("application/json");
+    }
+
+    /**
+     * account_id -> Account id<br>
+     * game_token -> Game token<br>
+     * dst_token_types -> unknown<br>
+     * <b>Full Request: {"dst_token_types":[1],"account_id":,"game_token":""}</b>
+     */
+    private static void getByGameTokenRequest(Context ctx) {
+        /// FIXME: Investigation
+        JsonObject response = new JsonObject();
+        response.addProperty("retcode", Retcodes.AUTHORIZATION_FAILED_ERROR_VALUE);
+        response.addProperty("message", "Login status is invalid. Please log in again.");
+        response.add("data", null);
+        ctx.result(Json.toJsonString(response)).contentType("application/json");
+    }
+
     @Override
     public void applyRoutes(Javalin javalin) {
         /// https://sdk-common-static.hoyoverse.com/sdk_global/apphub/api/getAttributionReportConfig
@@ -121,5 +200,14 @@ public class AndroidGenericRequestRouter implements Router {
         javalin.get(game_biz + "/combo/granter/api/getProtocol", AndroidGenericRequestRouter::compareProtocolVersionRequest);
         javalin.get("combo/granter/api/compareProtocolVersion", AndroidGenericRequestRouter::compareProtocolVersionRequest);
         javalin.get("combo/granter/api/getProtocol", AndroidGenericRequestRouter::compareProtocolVersionRequest);
+
+        /// https://sdk-os-static.hoyoverse.com/combo/box/api/config/porte-os/kibana_box
+        javalin.get("combo/box/api/config/porte-os/kibana_box", AndroidGenericRequestRouter::kibanaBoxRequest);
+
+        /// https://hk4e-sdk-os-static.hoyoverse.com/hk4e_global/account/ma-passport/api/getSwitchStatus
+        javalin.get(game_biz + "/account/ma-passport/api/getSwitchStatus", AndroidGenericRequestRouter::getSwitchStatus);
+
+        /// https://hk4e-sdk-os.hoyoverse.com/hk4e_global/account/ma-passport/token/getByGameToken
+        javalin.post(game_biz + "/account/ma-passport/token/getByGameToken", AndroidGenericRequestRouter::getByGameTokenRequest);
     }
 }
